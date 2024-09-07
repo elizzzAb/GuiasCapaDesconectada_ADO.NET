@@ -1,0 +1,10 @@
+C:\Users\Elizabeth\Desktop\ProgramacionIIPracticas\GuiaXIX---\CapaDesconectada\CapaDesconectada\bin\Debug\CapaDesconectada.exe.config
+C:\Users\Elizabeth\Desktop\ProgramacionIIPracticas\GuiaXIX---\CapaDesconectada\CapaDesconectada\bin\Debug\CapaDesconectada.exe
+C:\Users\Elizabeth\Desktop\ProgramacionIIPracticas\GuiaXIX---\CapaDesconectada\CapaDesconectada\bin\Debug\CapaDesconectada.pdb
+C:\Users\Elizabeth\Desktop\ProgramacionIIPracticas\GuiaXIX---\CapaDesconectada\CapaDesconectada\obj\Debug\CapaDesconectada.csproj.AssemblyReference.cache
+C:\Users\Elizabeth\Desktop\ProgramacionIIPracticas\GuiaXIX---\CapaDesconectada\CapaDesconectada\obj\Debug\CapaDesconectada.Form1.resources
+C:\Users\Elizabeth\Desktop\ProgramacionIIPracticas\GuiaXIX---\CapaDesconectada\CapaDesconectada\obj\Debug\CapaDesconectada.Properties.Resources.resources
+C:\Users\Elizabeth\Desktop\ProgramacionIIPracticas\GuiaXIX---\CapaDesconectada\CapaDesconectada\obj\Debug\CapaDesconectada.csproj.GenerateResource.cache
+C:\Users\Elizabeth\Desktop\ProgramacionIIPracticas\GuiaXIX---\CapaDesconectada\CapaDesconectada\obj\Debug\CapaDesconectada.csproj.CoreCompileInputs.cache
+C:\Users\Elizabeth\Desktop\ProgramacionIIPracticas\GuiaXIX---\CapaDesconectada\CapaDesconectada\obj\Debug\CapaDesconectada.exe
+C:\Users\Elizabeth\Desktop\ProgramacionIIPracticas\GuiaXIX---\CapaDesconectada\CapaDesconectada\obj\Debug\CapaDesconectada.pdb
