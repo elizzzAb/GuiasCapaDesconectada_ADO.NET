@@ -25,6 +25,19 @@ namespace CapaDesconectada
 
         }
 
+        private void btnBuscarNt_Click(object sender, EventArgs e)
+        {
+            var cliente = customerRepository.obtenerPorID(tbBusquedaNt.Text);
+            
+        }
+        //No sirve el btn
+        //donde esta ese btn???
+        //private void btBuscarPorIdNt_Click(object sender, EventArgs e)
+        //{
+        //    var cliente = customerRepository.ObetenerPorId(tboxObtenerNt.Text);
+        //}
+
+
         #endregion
 
         #region tipado
@@ -41,7 +54,7 @@ namespace CapaDesconectada
         {
             InitializeComponent();
         }
+
        
-        
     }
 }
