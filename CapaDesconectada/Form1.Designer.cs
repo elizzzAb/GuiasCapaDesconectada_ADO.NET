@@ -29,14 +29,17 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnBuscarNt = new System.Windows.Forms.Button();
             this.btnObtenerNoTipado = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.tbBusquedaNt = new System.Windows.Forms.TextBox();
             this.gridNotipado = new System.Windows.Forms.DataGridView();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnObtenerTipado = new System.Windows.Forms.Button();
             this.gridTipado = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.tbBusquedaNt = new System.Windows.Forms.TextBox();
-            this.btnBuscarNt = new System.Windows.Forms.Button();
+            this.btnBuscarTipado = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.tboxBuscarTipado = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridNotipado)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -57,6 +60,16 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "DataSet No Tipado";
             // 
+            // btnBuscarNt
+            // 
+            this.btnBuscarNt.Location = new System.Drawing.Point(49, 328);
+            this.btnBuscarNt.Name = "btnBuscarNt";
+            this.btnBuscarNt.Size = new System.Drawing.Size(116, 33);
+            this.btnBuscarNt.TabIndex = 4;
+            this.btnBuscarNt.Text = "Buscar Cliente";
+            this.btnBuscarNt.UseVisualStyleBackColor = true;
+            this.btnBuscarNt.Click += new System.EventHandler(this.btnBuscarNt_Click);
+            // 
             // btnObtenerNoTipado
             // 
             this.btnObtenerNoTipado.Location = new System.Drawing.Point(61, 231);
@@ -66,6 +79,22 @@
             this.btnObtenerNoTipado.Text = "Obtener Datos No Tipados";
             this.btnObtenerNoTipado.UseVisualStyleBackColor = true;
             this.btnObtenerNoTipado.Click += new System.EventHandler(this.btnObtenerNoTipado_Click_1);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(20, 305);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(75, 13);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Buscar Cliente";
+            // 
+            // tbBusquedaNt
+            // 
+            this.tbBusquedaNt.Location = new System.Drawing.Point(101, 302);
+            this.tbBusquedaNt.Name = "tbBusquedaNt";
+            this.tbBusquedaNt.Size = new System.Drawing.Size(154, 20);
+            this.tbBusquedaNt.TabIndex = 3;
             // 
             // gridNotipado
             // 
@@ -77,7 +106,10 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.btnBuscarTipado);
+            this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.btnObtenerTipado);
+            this.groupBox2.Controls.Add(this.tboxBuscarTipado);
             this.groupBox2.Controls.Add(this.gridTipado);
             this.groupBox2.Location = new System.Drawing.Point(483, 12);
             this.groupBox2.Name = "groupBox2";
@@ -104,31 +136,31 @@
             this.gridTipado.Size = new System.Drawing.Size(390, 193);
             this.gridTipado.TabIndex = 1;
             // 
-            // label1
+            // btnBuscarTipado
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(20, 305);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(75, 13);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Buscar Cliente";
+            this.btnBuscarTipado.Location = new System.Drawing.Point(89, 328);
+            this.btnBuscarTipado.Name = "btnBuscarTipado";
+            this.btnBuscarTipado.Size = new System.Drawing.Size(116, 33);
+            this.btnBuscarTipado.TabIndex = 7;
+            this.btnBuscarTipado.Text = "Buscar Cliente";
+            this.btnBuscarTipado.UseVisualStyleBackColor = true;
+            this.btnBuscarTipado.Click += new System.EventHandler(this.btnBuscarTipado_Click);
             // 
-            // tbBusquedaNt
+            // label2
             // 
-            this.tbBusquedaNt.Location = new System.Drawing.Point(101, 302);
-            this.tbBusquedaNt.Name = "tbBusquedaNt";
-            this.tbBusquedaNt.Size = new System.Drawing.Size(154, 20);
-            this.tbBusquedaNt.TabIndex = 3;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(60, 305);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(75, 13);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Buscar Cliente";
             // 
-            // btnBuscarNt
+            // tboxBuscarTipado
             // 
-            this.btnBuscarNt.Location = new System.Drawing.Point(49, 328);
-            this.btnBuscarNt.Name = "btnBuscarNt";
-            this.btnBuscarNt.Size = new System.Drawing.Size(116, 33);
-            this.btnBuscarNt.TabIndex = 4;
-            this.btnBuscarNt.Text = "Buscar Cliente";
-            this.btnBuscarNt.UseVisualStyleBackColor = true;
-            this.btnBuscarNt.Click += new System.EventHandler(this.btnBuscarNt_Click);
+            this.tboxBuscarTipado.Location = new System.Drawing.Point(141, 302);
+            this.tboxBuscarTipado.Name = "tboxBuscarTipado";
+            this.tboxBuscarTipado.Size = new System.Drawing.Size(154, 20);
+            this.tboxBuscarTipado.TabIndex = 6;
             // 
             // Form1
             // 
@@ -143,6 +175,7 @@
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridNotipado)).EndInit();
             this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridTipado)).EndInit();
             this.ResumeLayout(false);
 
@@ -159,6 +192,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox tbBusquedaNt;
         private System.Windows.Forms.Button btnBuscarNt;
+        private System.Windows.Forms.Button btnBuscarTipado;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox tboxBuscarTipado;
     }
 }
 
