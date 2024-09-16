@@ -35,6 +35,7 @@
             this.tbBusquedaNt = new System.Windows.Forms.TextBox();
             this.gridNotipado = new System.Windows.Forms.DataGridView();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnInsertarT = new System.Windows.Forms.Button();
             this.btnBuscarTipado = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.btnObtenerTipado = new System.Windows.Forms.Button();
@@ -117,6 +118,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.btnInsertarT);
             this.groupBox2.Controls.Add(this.btnBuscarTipado);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.btnObtenerTipado);
@@ -129,9 +131,19 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "DataSet Tipado";
             // 
+            // btnInsertarT
+            // 
+            this.btnInsertarT.Location = new System.Drawing.Point(139, 367);
+            this.btnInsertarT.Name = "btnInsertarT";
+            this.btnInsertarT.Size = new System.Drawing.Size(61, 33);
+            this.btnInsertarT.TabIndex = 8;
+            this.btnInsertarT.Text = "Enviar";
+            this.btnInsertarT.UseVisualStyleBackColor = true;
+            this.btnInsertarT.Click += new System.EventHandler(this.btnInsertarT_Click);
+            // 
             // btnBuscarTipado
             // 
-            this.btnBuscarTipado.Location = new System.Drawing.Point(98, 328);
+            this.btnBuscarTipado.Location = new System.Drawing.Point(124, 328);
             this.btnBuscarTipado.Name = "btnBuscarTipado";
             this.btnBuscarTipado.Size = new System.Drawing.Size(89, 33);
             this.btnBuscarTipado.TabIndex = 7;
@@ -162,7 +174,7 @@
             // 
             this.tboxBuscarTipado.Location = new System.Drawing.Point(98, 302);
             this.tboxBuscarTipado.Name = "tboxBuscarTipado";
-            this.tboxBuscarTipado.Size = new System.Drawing.Size(127, 20);
+            this.tboxBuscarTipado.Size = new System.Drawing.Size(134, 20);
             this.tboxBuscarTipado.TabIndex = 6;
             // 
             // gridTipado
@@ -319,6 +331,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox tboxAddres;
         private System.Windows.Forms.Button btonInsertarCliente;
+        private System.Windows.Forms.Button btnInsertarT;
     }
 }
 

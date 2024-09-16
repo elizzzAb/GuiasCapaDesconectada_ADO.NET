@@ -28,6 +28,7 @@ namespace CapaDesconectada
         private void btnBuscarNt_Click(object sender, EventArgs e)
         {
             var cliente = customerRepository.obtenerPorID(tbBusquedaNt.Text);
+            
             if (cliente == null)
             {
                 MessageBox.Show("El objeto es null");
@@ -56,15 +57,11 @@ namespace CapaDesconectada
                 ContactTitle = tboxContactTitle.Text,
                 Address = tboxAddres.Text
             };
-                MessageBox.Show(cliente.CustomerID);
-                MessageBox.Show(cliente.CompanyName);
-                MessageBox.Show(cliente.ContactName);
-                MessageBox.Show(cliente.ContactTitle);
-                MessageBox.Show(cliente.Address);
                 return cliente;
         }
 
         #endregion
+//------------------------------------------------------------------------------------------------------------
 
         #region tipado
         CustomersTableAdapter adaptador = new CustomersTableAdapter();
@@ -81,15 +78,29 @@ namespace CapaDesconectada
 
             if (customer != null)
             {
-                var objeto1 = customerRepository.ExtraerInformacionCliente(customer);
-                Console.WriteLine(customer);
+                //var objeto1 = customerRepository.ExtraerInformacionCliente(customer);
+                //Console.WriteLine(customer);
                 gridTipado.DataSource = customer;
 
             }
 
+        }
+
+        private void btnInsertarT_Click(object sender, EventArgs e)
+        {
+            var cliente = CrearCliente();
+            int insertados = adaptador.Insert(cliente.CustomerID, cliente.CompanyName,
+                cliente.ContactName, cliente.ContactTitle, cliente.Address, cliente.City,
+                cliente.Region, cliente.PostalCode, cliente.Country, cliente.Phone, cliente.Fax
+                ); //Aparece error por las restricciones que tiene la BD, si respetamos las restricciones no, pasa nada. 
+
+            MessageBox.Show($"{insertados} registros insertados");
 
         }
+
         #endregion
+
+//------------------------------------------------------------------------------------------------------------
 
         public Form1()
         {
