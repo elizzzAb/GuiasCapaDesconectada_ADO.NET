@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnActualizarNT = new System.Windows.Forms.Button();
             this.btnBuscarNt = new System.Windows.Forms.Button();
             this.btnObtenerNoTipado = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -60,6 +61,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnActualizarNT);
             this.groupBox1.Controls.Add(this.btnBuscarNt);
             this.groupBox1.Controls.Add(this.btnObtenerNoTipado);
             this.groupBox1.Controls.Add(this.label1);
@@ -72,9 +74,19 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "DataSet No Tipado";
             // 
+            // btnActualizarNT
+            // 
+            this.btnActualizarNT.Location = new System.Drawing.Point(138, 367);
+            this.btnActualizarNT.Name = "btnActualizarNT";
+            this.btnActualizarNT.Size = new System.Drawing.Size(61, 33);
+            this.btnActualizarNT.TabIndex = 9;
+            this.btnActualizarNT.Text = "Actualizar";
+            this.btnActualizarNT.UseVisualStyleBackColor = true;
+            this.btnActualizarNT.Click += new System.EventHandler(this.btnActualizarNT_Click);
+            // 
             // btnBuscarNt
             // 
-            this.btnBuscarNt.Location = new System.Drawing.Point(101, 328);
+            this.btnBuscarNt.Location = new System.Drawing.Point(126, 328);
             this.btnBuscarNt.Name = "btnBuscarNt";
             this.btnBuscarNt.Size = new System.Drawing.Size(86, 33);
             this.btnBuscarNt.TabIndex = 4;
@@ -332,6 +344,7 @@
         private System.Windows.Forms.TextBox tboxAddres;
         private System.Windows.Forms.Button btonInsertarCliente;
         private System.Windows.Forms.Button btnInsertarT;
+        private System.Windows.Forms.Button btnActualizarNT;
     }
 }
 
