@@ -63,7 +63,6 @@ namespace AccesoDatos
                     SqlDataAdapter adaptador = new SqlDataAdapter(comando);
                     adaptador.Fill(dataTable);
                     Customer cliente = ExtraerInformacionCliente(dataTable);
-                    //Customer cliente = ExtraerInfoCliente(dataTable);
                     return cliente;
                 }
             }
@@ -118,16 +117,6 @@ namespace AccesoDatos
 
         }
 
-        private SqlCommand parametrosSqlCustomer(SqlCommand comando, Customer cliente)
-        {
-            comando.Parameters.AddWithValue("CustomerID", cliente.CustomerID);
-            comando.Parameters.AddWithValue("CompanyName", cliente.CompanyName);
-            comando.Parameters.AddWithValue("ContactName", cliente.ContactName);
-            comando.Parameters.AddWithValue("ContactTitle", cliente.ContactTitle);
-            comando.Parameters.AddWithValue("Address", cliente.Address);
-            return comando;
-        }
-
         public int ActualizarCliente(Customer cliente)
         {
             using (var conexion = DataBase.GetSqlConnection())
@@ -148,8 +137,20 @@ namespace AccesoDatos
                     return adapter.UpdateCommand.ExecuteNonQuery();
                 }
             }
-            
+
         }
+
+        private SqlCommand parametrosSqlCustomer(SqlCommand comando, Customer cliente)
+        {
+            comando.Parameters.AddWithValue("CustomerID", cliente.CustomerID);
+            comando.Parameters.AddWithValue("CompanyName", cliente.CompanyName);
+            comando.Parameters.AddWithValue("ContactName", cliente.ContactName);
+            comando.Parameters.AddWithValue("ContactTitle", cliente.ContactTitle);
+            comando.Parameters.AddWithValue("Address", cliente.Address);
+            return comando;
+        }
+
+        
 
         
 

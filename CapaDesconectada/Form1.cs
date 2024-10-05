@@ -27,7 +27,7 @@ namespace CapaDesconectada
             }
             if (cliente == null)
             {
-                MessageBox.Show("objeto null ");
+                MessageBox.Show("Objeto null ");
             }
         }
 
@@ -76,8 +76,16 @@ namespace CapaDesconectada
                 return cliente;
         }
 
+        private void btnActualizarNT_Click(object sender, EventArgs e)
+        {
+            var cliente = CrearCliente();
+            var actualizadas = customerRepository.ActualizarCliente(cliente);
+            MessageBox.Show($"{actualizadas} filas actulizadas");
+        }
+
+
         #endregion
-//------------------------------------------------------------------------------------------------------------
+        //------------------------------------------------------------------------------------------------------------
 
         #region tipado
         CustomersTableAdapter adaptador = new CustomersTableAdapter();
@@ -95,8 +103,12 @@ namespace CapaDesconectada
             if (customer != null)
             {
                 //var objeto1 = customerRepository.ExtraerInformacionCliente(customer);
+                //RellenarForm(objeto1);
                 //Console.WriteLine(customer);
-                gridTipado.DataSource = customer;
+                //gridTipado.DataSource = customer;
+                var objeto1 = customerRepository.ExtraerInformacionCliente(customer);
+                RellenarForm(objeto1);
+                Console.WriteLine(customer);
 
             }
 
@@ -114,20 +126,52 @@ namespace CapaDesconectada
 
         }
 
+        private void btnActualizarT_Click(object sender, EventArgs e)
+        {
+            var fila = adaptador.GetDataByCustomerID(tboxCustomerID.Text);
+
+            if (fila != null)
+            {
+                var datoOriginal = customerRepository.ExtraerInformacionCliente(fila);
+                var datosModificados = CrearCliente();
+                var filas = adaptador.Update(
+                    datosModificados.CustomerID,
+                    datosModificados.CompanyName,
+                    datosModificados.ContactName,
+                    datosModificados.ContactTitle,
+                    datosModificados.Address,
+                    datosModificados.City,
+                    datosModificados.Region,
+                    datosModificados.PostalCode,
+                    datosModificados.Country,
+                    datosModificados.Phone,
+                    datosModificados.Fax,
+                    datoOriginal.CustomerID,
+                    datoOriginal.CompanyName,
+                    datoOriginal.ContactName,
+                    datoOriginal.ContactTitle,
+                    datoOriginal.Address,
+                    datoOriginal.City,
+                    datoOriginal.Region,
+                    datoOriginal.PostalCode,
+                    datoOriginal.Country,
+                    datoOriginal.Phone,
+                    datoOriginal.Fax
+                    );
+
+                MessageBox.Show($"{filas} filas modificadas");
+            }
+        }
+
         #endregion
 
-//------------------------------------------------------------------------------------------------------------
+        //------------------------------------------------------------------------------------------------------------
 
         public Form1()
         {
             InitializeComponent();
         }
 
-        private void btnActualizarNT_Click(object sender, EventArgs e)
-        {
-            var cliente = CrearCliente();
-            var actulaizadas = customerRepository.ActualizarCliente(cliente);
-            MessageBox.Show($"{actulaizadas} filas actulizadas");
-        }
+        
     }
 }

@@ -53,6 +53,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.tboxAddres = new System.Windows.Forms.TextBox();
             this.btonInsertarCliente = new System.Windows.Forms.Button();
+            this.btnActualizarT = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridNotipado)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -69,16 +70,16 @@
             this.groupBox1.Controls.Add(this.gridNotipado);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(270, 414);
+            this.groupBox1.Size = new System.Drawing.Size(270, 433);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "DataSet No Tipado";
             // 
             // btnActualizarNT
             // 
-            this.btnActualizarNT.Location = new System.Drawing.Point(138, 367);
+            this.btnActualizarNT.Location = new System.Drawing.Point(138, 348);
             this.btnActualizarNT.Name = "btnActualizarNT";
-            this.btnActualizarNT.Size = new System.Drawing.Size(61, 33);
+            this.btnActualizarNT.Size = new System.Drawing.Size(61, 23);
             this.btnActualizarNT.TabIndex = 9;
             this.btnActualizarNT.Text = "Actualizar";
             this.btnActualizarNT.UseVisualStyleBackColor = true;
@@ -86,9 +87,9 @@
             // 
             // btnBuscarNt
             // 
-            this.btnBuscarNt.Location = new System.Drawing.Point(126, 328);
+            this.btnBuscarNt.Location = new System.Drawing.Point(125, 321);
             this.btnBuscarNt.Name = "btnBuscarNt";
-            this.btnBuscarNt.Size = new System.Drawing.Size(86, 33);
+            this.btnBuscarNt.Size = new System.Drawing.Size(86, 21);
             this.btnBuscarNt.TabIndex = 4;
             this.btnBuscarNt.Text = "Buscar Cliente";
             this.btnBuscarNt.UseVisualStyleBackColor = true;
@@ -96,9 +97,9 @@
             // 
             // btnObtenerNoTipado
             // 
-            this.btnObtenerNoTipado.Location = new System.Drawing.Point(86, 231);
+            this.btnObtenerNoTipado.Location = new System.Drawing.Point(55, 231);
             this.btnObtenerNoTipado.Name = "btnObtenerNoTipado";
-            this.btnObtenerNoTipado.Size = new System.Drawing.Size(101, 38);
+            this.btnObtenerNoTipado.Size = new System.Drawing.Size(144, 25);
             this.btnObtenerNoTipado.TabIndex = 1;
             this.btnObtenerNoTipado.Text = "Obtener Datos No Tipados";
             this.btnObtenerNoTipado.UseVisualStyleBackColor = true;
@@ -107,7 +108,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(20, 305);
+            this.label1.Location = new System.Drawing.Point(19, 298);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(75, 13);
             this.label1.TabIndex = 2;
@@ -115,7 +116,7 @@
             // 
             // tbBusquedaNt
             // 
-            this.tbBusquedaNt.Location = new System.Drawing.Point(101, 302);
+            this.tbBusquedaNt.Location = new System.Drawing.Point(100, 295);
             this.tbBusquedaNt.Name = "tbBusquedaNt";
             this.tbBusquedaNt.Size = new System.Drawing.Size(129, 20);
             this.tbBusquedaNt.TabIndex = 3;
@@ -130,6 +131,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.btnActualizarT);
             this.groupBox2.Controls.Add(this.btnInsertarT);
             this.groupBox2.Controls.Add(this.btnBuscarTipado);
             this.groupBox2.Controls.Add(this.label2);
@@ -138,16 +140,16 @@
             this.groupBox2.Controls.Add(this.gridTipado);
             this.groupBox2.Location = new System.Drawing.Point(299, 12);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(275, 414);
+            this.groupBox2.Size = new System.Drawing.Size(275, 433);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "DataSet Tipado";
             // 
             // btnInsertarT
             // 
-            this.btnInsertarT.Location = new System.Drawing.Point(139, 367);
+            this.btnInsertarT.Location = new System.Drawing.Point(143, 351);
             this.btnInsertarT.Name = "btnInsertarT";
-            this.btnInsertarT.Size = new System.Drawing.Size(61, 33);
+            this.btnInsertarT.Size = new System.Drawing.Size(61, 23);
             this.btnInsertarT.TabIndex = 8;
             this.btnInsertarT.Text = "Enviar";
             this.btnInsertarT.UseVisualStyleBackColor = true;
@@ -155,9 +157,9 @@
             // 
             // btnBuscarTipado
             // 
-            this.btnBuscarTipado.Location = new System.Drawing.Point(124, 328);
+            this.btnBuscarTipado.Location = new System.Drawing.Point(130, 324);
             this.btnBuscarTipado.Name = "btnBuscarTipado";
-            this.btnBuscarTipado.Size = new System.Drawing.Size(89, 33);
+            this.btnBuscarTipado.Size = new System.Drawing.Size(89, 21);
             this.btnBuscarTipado.TabIndex = 7;
             this.btnBuscarTipado.Text = "Buscar Cliente";
             this.btnBuscarTipado.UseVisualStyleBackColor = true;
@@ -166,7 +168,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(17, 302);
+            this.label2.Location = new System.Drawing.Point(23, 298);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(75, 13);
             this.label2.TabIndex = 5;
@@ -174,9 +176,9 @@
             // 
             // btnObtenerTipado
             // 
-            this.btnObtenerTipado.Location = new System.Drawing.Point(63, 230);
+            this.btnObtenerTipado.Location = new System.Drawing.Point(67, 230);
             this.btnObtenerTipado.Name = "btnObtenerTipado";
-            this.btnObtenerTipado.Size = new System.Drawing.Size(116, 39);
+            this.btnObtenerTipado.Size = new System.Drawing.Size(137, 26);
             this.btnObtenerTipado.TabIndex = 2;
             this.btnObtenerTipado.Text = "Obtener Datos Tipados";
             this.btnObtenerTipado.UseVisualStyleBackColor = true;
@@ -184,7 +186,7 @@
             // 
             // tboxBuscarTipado
             // 
-            this.tboxBuscarTipado.Location = new System.Drawing.Point(98, 302);
+            this.tboxBuscarTipado.Location = new System.Drawing.Point(104, 298);
             this.tboxBuscarTipado.Name = "tboxBuscarTipado";
             this.tboxBuscarTipado.Size = new System.Drawing.Size(134, 20);
             this.tboxBuscarTipado.TabIndex = 6;
@@ -200,7 +202,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(636, 44);
+            this.label3.Location = new System.Drawing.Point(640, 127);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(65, 13);
             this.label3.TabIndex = 8;
@@ -208,7 +210,7 @@
             // 
             // tboxCustomerID
             // 
-            this.tboxCustomerID.Location = new System.Drawing.Point(717, 41);
+            this.tboxCustomerID.Location = new System.Drawing.Point(721, 124);
             this.tboxCustomerID.Name = "tboxCustomerID";
             this.tboxCustomerID.Size = new System.Drawing.Size(127, 20);
             this.tboxCustomerID.TabIndex = 9;
@@ -216,7 +218,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(619, 82);
+            this.label4.Location = new System.Drawing.Point(623, 165);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(82, 13);
             this.label4.TabIndex = 10;
@@ -224,7 +226,7 @@
             // 
             // tboxCompaniName
             // 
-            this.tboxCompaniName.Location = new System.Drawing.Point(717, 79);
+            this.tboxCompaniName.Location = new System.Drawing.Point(721, 162);
             this.tboxCompaniName.Name = "tboxCompaniName";
             this.tboxCompaniName.Size = new System.Drawing.Size(127, 20);
             this.tboxCompaniName.TabIndex = 11;
@@ -232,7 +234,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(626, 122);
+            this.label5.Location = new System.Drawing.Point(630, 205);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(75, 13);
             this.label5.TabIndex = 12;
@@ -240,7 +242,7 @@
             // 
             // tboxContactName
             // 
-            this.tboxContactName.Location = new System.Drawing.Point(717, 122);
+            this.tboxContactName.Location = new System.Drawing.Point(721, 205);
             this.tboxContactName.Name = "tboxContactName";
             this.tboxContactName.Size = new System.Drawing.Size(127, 20);
             this.tboxContactName.TabIndex = 13;
@@ -248,7 +250,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(634, 163);
+            this.label6.Location = new System.Drawing.Point(638, 246);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(67, 13);
             this.label6.TabIndex = 14;
@@ -256,7 +258,7 @@
             // 
             // tboxContactTitle
             // 
-            this.tboxContactTitle.Location = new System.Drawing.Point(717, 160);
+            this.tboxContactTitle.Location = new System.Drawing.Point(721, 243);
             this.tboxContactTitle.Name = "tboxContactTitle";
             this.tboxContactTitle.Size = new System.Drawing.Size(127, 20);
             this.tboxContactTitle.TabIndex = 15;
@@ -264,7 +266,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(661, 205);
+            this.label7.Location = new System.Drawing.Point(665, 288);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(40, 13);
             this.label7.TabIndex = 16;
@@ -272,14 +274,14 @@
             // 
             // tboxAddres
             // 
-            this.tboxAddres.Location = new System.Drawing.Point(717, 198);
+            this.tboxAddres.Location = new System.Drawing.Point(721, 281);
             this.tboxAddres.Name = "tboxAddres";
             this.tboxAddres.Size = new System.Drawing.Size(127, 20);
             this.tboxAddres.TabIndex = 17;
             // 
             // btonInsertarCliente
             // 
-            this.btonInsertarCliente.Location = new System.Drawing.Point(735, 224);
+            this.btonInsertarCliente.Location = new System.Drawing.Point(739, 307);
             this.btonInsertarCliente.Name = "btonInsertarCliente";
             this.btonInsertarCliente.Size = new System.Drawing.Size(89, 33);
             this.btonInsertarCliente.TabIndex = 8;
@@ -287,11 +289,21 @@
             this.btonInsertarCliente.UseVisualStyleBackColor = true;
             this.btonInsertarCliente.Click += new System.EventHandler(this.btonInsertarCliente_Click);
             // 
+            // btnActualizarT
+            // 
+            this.btnActualizarT.Location = new System.Drawing.Point(143, 380);
+            this.btnActualizarT.Name = "btnActualizarT";
+            this.btnActualizarT.Size = new System.Drawing.Size(61, 23);
+            this.btnActualizarT.TabIndex = 9;
+            this.btnActualizarT.Text = "Actualizar";
+            this.btnActualizarT.UseVisualStyleBackColor = true;
+            this.btnActualizarT.Click += new System.EventHandler(this.btnActualizarT_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(897, 450);
+            this.ClientSize = new System.Drawing.Size(897, 511);
             this.Controls.Add(this.btonInsertarCliente);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.tboxAddres);
@@ -345,6 +357,7 @@
         private System.Windows.Forms.Button btonInsertarCliente;
         private System.Windows.Forms.Button btnInsertarT;
         private System.Windows.Forms.Button btnActualizarNT;
+        private System.Windows.Forms.Button btnActualizarT;
     }
 }
 
