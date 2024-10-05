@@ -105,10 +105,11 @@ namespace CapaDesconectada
                 //var objeto1 = customerRepository.ExtraerInformacionCliente(customer);
                 //RellenarForm(objeto1);
                 //Console.WriteLine(customer);
-                //gridTipado.DataSource = customer;
+                
                 var objeto1 = customerRepository.ExtraerInformacionCliente(customer);
                 RellenarForm(objeto1);
                 Console.WriteLine(customer);
+                gridTipado.DataSource = customer;
 
             }
 
@@ -134,7 +135,7 @@ namespace CapaDesconectada
             {
                 var datoOriginal = customerRepository.ExtraerInformacionCliente(fila);
                 var datosModificados = CrearCliente();
-                var filas = adaptador.Update(
+                /*var filas = adaptador.Update(
                     datosModificados.CustomerID,
                     datosModificados.CompanyName,
                     datosModificados.ContactName,
@@ -158,8 +159,33 @@ namespace CapaDesconectada
                     datoOriginal.Phone,
                     datoOriginal.Fax
                     );
+                */
 
-                MessageBox.Show($"{filas} filas modificadas");
+                /*var filas = adaptador.ActualizarCliente(datosModificados.CustomerID,
+                 datosModificados.CompanyName,
+                 datosModificados.ContactName,
+                 datosModificados.ContactTitle,
+                 datosModificados.Address,
+                 datosModificados.City,
+                 datosModificados.Region,
+                 datosModificados.PostalCode,
+                 datosModificados.Country,
+                 datosModificados.Phone,
+                 datosModificados.Fax, datoOriginal.CustomerID);
+                */
+
+                var filas = adaptador.Consulta1SoloObjeto(datosModificados.CustomerID,
+                 datosModificados.CompanyName,
+                 datosModificados.ContactName,
+                 datosModificados.ContactTitle,
+                 datosModificados.Address,
+                 datosModificados.City,
+                 datosModificados.Region,
+                 datosModificados.PostalCode,
+                 datosModificados.Country,
+                 datosModificados.Phone,
+                 datosModificados.Fax);
+                MessageBox.Show($"{filas} filas modificadas.");
             }
         }
 
