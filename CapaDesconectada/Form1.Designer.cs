@@ -37,6 +37,7 @@
             this.tbBusquedaNt = new System.Windows.Forms.TextBox();
             this.gridNotipado = new System.Windows.Forms.DataGridView();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnEliminarT = new System.Windows.Forms.Button();
             this.btnActualizarT = new System.Windows.Forms.Button();
             this.btnInsertarT = new System.Windows.Forms.Button();
             this.btnBuscarTipado = new System.Windows.Forms.Button();
@@ -72,7 +73,7 @@
             this.groupBox1.Controls.Add(this.gridNotipado);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(270, 433);
+            this.groupBox1.Size = new System.Drawing.Size(270, 475);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "DataSet No Tipado";
@@ -143,6 +144,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.btnEliminarT);
             this.groupBox2.Controls.Add(this.btnActualizarT);
             this.groupBox2.Controls.Add(this.btnInsertarT);
             this.groupBox2.Controls.Add(this.btnBuscarTipado);
@@ -152,10 +154,20 @@
             this.groupBox2.Controls.Add(this.gridTipado);
             this.groupBox2.Location = new System.Drawing.Point(299, 12);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(275, 433);
+            this.groupBox2.Size = new System.Drawing.Size(275, 475);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "DataSet Tipado";
+            // 
+            // btnEliminarT
+            // 
+            this.btnEliminarT.Location = new System.Drawing.Point(143, 409);
+            this.btnEliminarT.Name = "btnEliminarT";
+            this.btnEliminarT.Size = new System.Drawing.Size(61, 23);
+            this.btnEliminarT.TabIndex = 11;
+            this.btnEliminarT.Text = "Eliminar";
+            this.btnEliminarT.UseVisualStyleBackColor = true;
+            this.btnEliminarT.Click += new System.EventHandler(this.btnEliminarT_Click);
             // 
             // btnActualizarT
             // 
@@ -169,11 +181,11 @@
             // 
             // btnInsertarT
             // 
-            this.btnInsertarT.Location = new System.Drawing.Point(143, 351);
+            this.btnInsertarT.Location = new System.Drawing.Point(121, 351);
             this.btnInsertarT.Name = "btnInsertarT";
-            this.btnInsertarT.Size = new System.Drawing.Size(61, 23);
+            this.btnInsertarT.Size = new System.Drawing.Size(107, 23);
             this.btnInsertarT.TabIndex = 8;
-            this.btnInsertarT.Text = "Enviar";
+            this.btnInsertarT.Text = "Enviar/Insertar";
             this.btnInsertarT.UseVisualStyleBackColor = true;
             this.btnInsertarT.Click += new System.EventHandler(this.btnInsertarT_Click);
             // 
@@ -315,7 +327,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(897, 511);
+            this.ClientSize = new System.Drawing.Size(897, 537);
             this.Controls.Add(this.btonInsertarCliente);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.tboxAddres);
@@ -371,6 +383,7 @@
         private System.Windows.Forms.Button btnActualizarNT;
         private System.Windows.Forms.Button btnActualizarT;
         private System.Windows.Forms.Button btnEliminarClienteNt;
+        private System.Windows.Forms.Button btnEliminarT;
     }
 }
 
